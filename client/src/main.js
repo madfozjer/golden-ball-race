@@ -1,0 +1,39 @@
+import "./assets/main.css";
+
+import { createApp } from "vue";
+import App from "./App.vue";
+
+async function getTopScorers() {
+  try {
+    const response = await fetch(`http://localhost:5000/api/scorers`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error(`Fetch scorers is unsuccesful.`, error);
+  }
+}
+
+async function getStandings() {
+  try {
+    const response = await fetch(`http://localhost:5000/api/standings`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error(`Fetch standings is unsuccesful.`, error);
+  }
+}
+
+getTopScorers();
+getStandings();
+
+createApp(App).mount("#app");
