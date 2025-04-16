@@ -1,0 +1,1338 @@
+[
+  {
+    "team_name": "Anderlecht",
+    "team_abbreviation": "AND"
+  },
+  {
+    "team_name": "Antwerp",
+    "team_abbreviation": "ANT"
+  },
+  {
+    "team_name": "Cercle Brugge KSV",
+    "team_abbreviation": "CEB"
+  },
+  {
+    "team_name": "Club Brugge",
+    "team_abbreviation": "CLB"
+  },
+  {
+    "team_name": "Eupen",
+    "team_abbreviation": "EUP"
+  },
+  {
+    "team_name": "KAA Gent",
+    "team_abbreviation": "GNT"
+  },
+  {
+    "team_name": "KV Kortrijk",
+    "team_abbreviation": "KVK"
+  },
+  {
+    "team_name": "KV Mechelen",
+    "team_abbreviation": "KVM"
+  },
+  {
+    "team_name": "KVC Westerlo",
+    "team_abbreviation": "WES"
+  },
+  {
+    "team_name": "Oud-Heverlee Leuven",
+    "team_abbreviation": "OHL"
+  },
+  {
+    "team_name": "Racing Genk",
+    "team_abbreviation": "GNK"
+  },
+  {
+    "team_name": "Royal Charleroi SC",
+    "team_abbreviation": "CHA"
+  },
+  {
+    "team_name": "RWDM",
+    "team_abbreviation": "RWD"
+  },
+  {
+    "team_name": "Sint-Truidense",
+    "team_abbreviation": "STV"
+  },
+  {
+    "team_name": "Standard Liege",
+    "team_abbreviation": "STL"
+  },
+  {
+    "team_name": "Union St.-Gilloise",
+    "team_abbreviation": "USG"
+  },
+  {
+    "team_name": "Baník Ostrava",
+    "team_abbreviation": "BO"
+  },
+  {
+    "team_name": "Bohemians",
+    "team_abbreviation": "BH"
+  },
+  {
+    "team_name": "C. Budejovice",
+    "team_abbreviation": "CB"
+  },
+  {
+    "team_name": "Hradec Králové",
+    "team_abbreviation": "HK"
+  },
+  {
+    "team_name": "Jablonec",
+    "team_abbreviation": "JA"
+  },
+  {
+    "team_name": "Karviná",
+    "team_abbreviation": "KA"
+  },
+  {
+    "team_name": "Mladá Boleslav",
+    "team_abbreviation": "MB"
+  },
+  {
+    "team_name": "Pardubice",
+    "team_abbreviation": "PA"
+  },
+  {
+    "team_name": "Sigma Olomouc",
+    "team_abbreviation": "SO"
+  },
+  {
+    "team_name": "Slovácko",
+    "team_abbreviation": "SL"
+  },
+  {
+    "team_name": "Slovan Liberec",
+    "team_abbreviation": "SLI"
+  },
+  {
+    "team_name": "Slavia Praha",
+    "team_abbreviation": "SP"
+  },
+  {
+    "team_name": "Sparta Praha",
+    "team_abbreviation": "SPA"
+  },
+  {
+    "team_name": "Teplice",
+    "team_abbreviation": "TE"
+  },
+  {
+    "team_name": "Viktoria Plzeň",
+    "team_abbreviation": "VP"
+  },
+  {
+    "team_name": "Zlín",
+    "team_abbreviation": "ZL"
+  },
+  {
+    "team_name": "Dinamo Zagreb",
+    "team_abbreviation": "DIN"
+  },
+  {
+    "team_name": "Gorica",
+    "team_abbreviation": "GOR"
+  },
+  {
+    "team_name": "Hajduk Split",
+    "team_abbreviation": "HAJ"
+  },
+  {
+    "team_name": "Istra",
+    "team_abbreviation": "IST"
+  },
+  {
+    "team_name": "Lokomotiva Zagreb",
+    "team_abbreviation": "LOK"
+  },
+  {
+    "team_name": "Osijek",
+    "team_abbreviation": "OSI"
+  },
+  {
+    "team_name": "Rijeka",
+    "team_abbreviation": "RIJ"
+  },
+  {
+    "team_name": "Rudeš",
+    "team_abbreviation": "RUD"
+  },
+  {
+    "team_name": "Slaven Belupo",
+    "team_abbreviation": "SLA"
+  },
+  {
+    "team_name": "Varaždin",
+    "team_abbreviation": "VAR"
+  },
+  {
+    "team_name": "FC Nordsjaelland",
+    "team_abbreviation": "NORD"
+  },
+  {
+    "team_name": "FC Copenhagen",
+    "team_abbreviation": "CPH"
+  },
+  {
+    "team_name": "FC Midtjylland",
+    "team_abbreviation": "MID"
+  },
+  {
+    "team_name": "AGF Aarhus",
+    "team_abbreviation": "AGF"
+  },
+  {
+    "team_name": "Brøndby",
+    "team_abbreviation": "BRO"
+  },
+  {
+    "team_name": "Viborg FF",
+    "team_abbreviation": "VIB"
+  },
+  {
+    "team_name": "Lyngby",
+    "team_abbreviation": "LBK"
+  },
+  {
+    "team_name": "Odense Boldklub",
+    "team_abbreviation": "OBK"
+  },
+  {
+    "team_name": "Silkeborg IF",
+    "team_abbreviation": "SIF"
+  },
+  {
+    "team_name": "Hvidovre IF",
+    "team_abbreviation": "HIF"
+  },
+  {
+    "team_name": "Randers FC",
+    "team_abbreviation": "RAN"
+  },
+  {
+    "team_name": "Vejle BK",
+    "team_abbreviation": "VEJ"
+  },
+  {
+    "team_name": "Arsenal",
+    "team_abbreviation": "ARS"
+  },
+  {
+    "team_name": "Aston Villa",
+    "team_abbreviation": "AVL"
+  },
+  {
+    "team_name": "Bournemouth",
+    "team_abbreviation": "BOU"
+  },
+  {
+    "team_name": "Brentford",
+    "team_abbreviation": "BRE"
+  },
+  {
+    "team_name": "Brighton",
+    "team_abbreviation": "BHA"
+  },
+  {
+    "team_name": "Chelsea",
+    "team_abbreviation": "CHE"
+  },
+  {
+    "team_name": "Crystal Palace",
+    "team_abbreviation": "CRY"
+  },
+  {
+    "team_name": "Everton",
+    "team_abbreviation": "EVE"
+  },
+  {
+    "team_name": "Fulham",
+    "team_abbreviation": "FUL"
+  },
+  {
+    "team_name": "Ipswich Town",
+    "team_abbreviation": "IPS"
+  },
+  {
+    "team_name": "Leicester City",
+    "team_abbreviation": "LEI"
+  },
+  {
+    "team_name": "Liverpool",
+    "team_abbreviation": "LIV"
+  },
+  {
+    "team_name": "Manchester City",
+    "team_abbreviation": "MCI"
+  },
+  {
+    "team_name": "Manchester United",
+    "team_abbreviation": "MUN"
+  },
+  {
+    "team_name": "Newcastle",
+    "team_abbreviation": "NEW"
+  },
+  {
+    "team_name": "Nottm Forest",
+    "team_abbreviation": "NFO"
+  },
+  {
+    "team_name": "Southampton",
+    "team_abbreviation": "SOU"
+  },
+  {
+    "team_name": "Tottenham",
+    "team_abbreviation": "TOT"
+  },
+  {
+    "team_name": "West Ham",
+    "team_abbreviation": "WHU"
+  },
+  {
+    "team_name": "Wolves",
+    "team_abbreviation": "WOL"
+  },
+  {
+    "team_name": "Blackburn Rovers",
+    "team_abbreviation": "BBR"
+  },
+  {
+    "team_name": "Bristol City",
+    "team_abbreviation": "BRC"
+  },
+  {
+    "team_name": "Burnley",
+    "team_abbreviation": "BRN"
+  },
+  {
+    "team_name": "Cardiff City",
+    "team_abbreviation": "CAR"
+  },
+  {
+    "team_name": "Coventry City",
+    "team_abbreviation": "COV"
+  },
+  {
+    "team_name": "Derby County",
+    "team_abbreviation": "DER"
+  },
+  {
+    "team_name": "Hull City",
+    "team_abbreviation": "HUL"
+  },
+  {
+    "team_name": "Leeds United",
+    "team_abbreviation": "LEE"
+  },
+  {
+    "team_name": "Luton Town",
+    "team_abbreviation": "LUT"
+  },
+  {
+    "team_name": "Middlesbrough",
+    "team_abbreviation": "MID"
+  },
+  {
+    "team_name": "Millwall",
+    "team_abbreviation": "MIL"
+  },
+  {
+    "team_name": "Norwich City",
+    "team_abbreviation": "NOR"
+  },
+  {
+    "team_name": "Oxford United",
+    "team_abbreviation": "OXF"
+  },
+  {
+    "team_name": "Plymouth Argyle",
+    "team_abbreviation": "PLY"
+  },
+  {
+    "team_name": "Portsmouth",
+    "team_abbreviation": "POR"
+  },
+  {
+    "team_name": "Preston North End",
+    "team_abbreviation": "PNE"
+  },
+  {
+    "team_name": "Queens Park Rangers",
+    "team_abbreviation": "QPR"
+  },
+  {
+    "team_name": "Sheffield United",
+    "team_abbreviation": "SHU"
+  },
+  {
+    "team_name": "Sheffield Wednesday",
+    "team_abbreviation": "SHW"
+  },
+  {
+    "team_name": "Stoke City",
+    "team_abbreviation": "STO"
+  },
+  {
+    "team_name": "Sunderland",
+    "team_abbreviation": "SUN"
+  },
+  {
+    "team_name": "Swansea City",
+    "team_abbreviation": "SWA"
+  },
+  {
+    "team_name": "Watford",
+    "team_abbreviation": "WAT"
+  },
+  {
+    "team_name": "West Bromwich Albion",
+    "team_abbreviation": "WBA"
+  },
+  {
+    "team_name": "Cambridge United",
+    "team_abbreviation": "CAM"
+  },
+  {
+    "team_name": "Bristol Rovers",
+    "team_abbreviation": "BRI"
+  },
+  {
+    "team_name": "Blackpool",
+    "team_abbreviation": "BLA"
+  },
+  {
+    "team_name": "Bolton Wanderers",
+    "team_abbreviation": "BOL"
+  },
+  {
+    "team_name": "Burton Albion",
+    "team_abbreviation": "BUR"
+  },
+  {
+    "team_name": "Exeter City",
+    "team_abbreviation": "EXE"
+  },
+  {
+    "team_name": "Northampton Town",
+    "team_abbreviation": "NOR"
+  },
+  {
+    "team_name": "Lincoln City",
+    "team_abbreviation": "LIN"
+  },
+  {
+    "team_name": "Barnsley",
+    "team_abbreviation": "BAR"
+  },
+  {
+    "team_name": "Birmingham City",
+    "team_abbreviation": "BIR"
+  },
+  {
+    "team_name": "Peterborough United",
+    "team_abbreviation": "PET"
+  },
+  {
+    "team_name": "Wigan Athletic",
+    "team_abbreviation": "WIG"
+  },
+  {
+    "team_name": "Wycombe Wanderers",
+    "team_abbreviation": "WYC"
+  },
+  {
+    "team_name": "Huddersfield Town",
+    "team_abbreviation": "HUD"
+  },
+  {
+    "team_name": "Bolton Wanderers",
+    "team_abbreviation": "BOL"
+  },
+  {
+    "team_name": "Charlton Athletic",
+    "team_abbreviation": "CHA"
+  },
+  {
+    "team_name": "Stockport County",
+    "team_abbreviation": "STO"
+  },
+  {
+    "team_name": "Mansfield Town",
+    "team_abbreviation": "MAN"
+  },
+  {
+    "team_name": "Reading",
+    "team_abbreviation": "REA"
+  },
+  {
+    "team_name": "Rotherham United",
+    "team_abbreviation": "ROT"
+  },
+  {
+    "team_name": "Stevenage",
+    "team_abbreviation": "STE"
+  },
+  {
+    "team_name": "Leyton Orient",
+    "team_abbreviation": "LEY"
+  },
+  {
+    "team_name": "Crawley Town",
+    "team_abbreviation": "CRA"
+  },
+  {
+    "team_name": "Shrewsbury Town",
+    "team_abbreviation": "SHR"
+  },
+  {
+    "team_name": "Accrington Stanley",
+    "team_abbreviation": "ACC"
+  },
+  {
+    "team_name": "AFC Wimbledon",
+    "team_abbreviation": "WIM"
+  },
+  {
+    "team_name": "Barrow",
+    "team_abbreviation": "BRW"
+  },
+  {
+    "team_name": "Bromley",
+    "team_abbreviation": "BRO"
+  },
+  {
+    "team_name": "Bradford City",
+    "team_abbreviation": "BRD"
+  },
+  {
+    "team_name": "Carlisle United",
+    "team_abbreviation": "CAR"
+  },
+  {
+    "team_name": "Cheltenham Town",
+    "team_abbreviation": "CHL"
+  },
+  {
+    "team_name": "Chesterfield",
+    "team_abbreviation": "CHES"
+  },
+  {
+    "team_name": "Colchester United",
+    "team_abbreviation": "COL"
+  },
+  {
+    "team_name": "Crewe Alexandra",
+    "team_abbreviation": "CAX"
+  },
+  {
+    "team_name": "Doncaster Rovers",
+    "team_abbreviation": "DON"
+  },
+  {
+    "team_name": "Fleetwood Town",
+    "team_abbreviation": "FLE"
+  },
+  {
+    "team_name": "Gillingham",
+    "team_abbreviation": "GIL"
+  },
+  {
+    "team_name": "Grimsby Town",
+    "team_abbreviation": "GRI"
+  },
+  {
+    "team_name": "Harrogate Town",
+    "team_abbreviation": "HAR"
+  },
+  {
+    "team_name": "Milton Keynes Dons",
+    "team_abbreviation": "MKD"
+  },
+  {
+    "team_name": "Morecambe",
+    "team_abbreviation": "MOR"
+  },
+  {
+    "team_name": "Newport County",
+    "team_abbreviation": "NEW"
+  },
+  {
+    "team_name": "Notts County",
+    "team_abbreviation": "NOTT"
+  },
+  {
+    "team_name": "Port Vale",
+    "team_abbreviation": "PTV"
+  },
+  {
+    "team_name": "Salford City",
+    "team_abbreviation": "SAL"
+  },
+  {
+    "team_name": "Swindon Town",
+    "team_abbreviation": "SWI"
+  },
+  {
+    "team_name": "Tranmere Rovers",
+    "team_abbreviation": "TRN"
+  },
+  {
+    "team_name": "Walsall",
+    "team_abbreviation": "WAL"
+  },
+  {
+    "team_name": "AJ Auxerre",
+    "team_abbreviation": "AUX"
+  },
+  {
+    "team_name": "Angers",
+    "team_abbreviation": "ANG"
+  },
+  {
+    "team_name": "AS Monaco",
+    "team_abbreviation": "ASM"
+  },
+  {
+    "team_name": "Brest",
+    "team_abbreviation": "BRE"
+  },
+  {
+    "team_name": "Le Havre AC",
+    "team_abbreviation": "HAC"
+  },
+  {
+    "team_name": "Lille",
+    "team_abbreviation": "LIL"
+  },
+  {
+    "team_name": "Lyon",
+    "team_abbreviation": "OL"
+  },
+  {
+    "team_name": "Marseille",
+    "team_abbreviation": "OM"
+  },
+  {
+    "team_name": "Montpellier",
+    "team_abbreviation": "MON"
+  },
+  {
+    "team_name": "Nice",
+    "team_abbreviation": "NIC"
+  },
+  {
+    "team_name": "Nantes",
+    "team_abbreviation": "NAN"
+  },
+  {
+    "team_name": "Paris Saint-Germain",
+    "team_abbreviation": "PSG"
+  },
+  {
+    "team_name": "Rennes",
+    "team_abbreviation": "REN"
+  },
+  {
+    "team_name": "Saint-Etienne",
+    "team_abbreviation": "ASS"
+  },
+  {
+    "team_name": "Strasbourg",
+    "team_abbreviation": "STR"
+  },
+  {
+    "team_name": "Toulouse",
+    "team_abbreviation": "TFC"
+  },
+  {
+    "team_name": "Lens",
+    "team_abbreviation": "RCL"
+  },
+  {
+    "team_name": "Stade de Reims",
+    "team_abbreviation": "SR"
+  },
+  {
+    "team_name": "Heidenheim",
+    "team_abbreviation": "HDH"
+  },
+  {
+    "team_name": "Union Berlin",
+    "team_abbreviation": "FCU"
+  },
+  {
+    "team_name": "Bayer Leverkusen",
+    "team_abbreviation": "B29"
+  },
+  {
+    "team_name": "Bayern Munich",
+    "team_abbreviation": "FCB"
+  },
+  {
+    "team_name": "Borussia Dortmund",
+    "team_abbreviation": "BVB"
+  },
+  {
+    "team_name": "Borussia Monchengladbach",
+    "team_abbreviation": "BMG"
+  },
+  {
+    "team_name": "FC Augsburg",
+    "team_abbreviation": "FCA"
+  },
+  {
+    "team_name": "Eintracht Frankfurt",
+    "team_abbreviation": "SGE"
+  },
+  {
+    "team_name": "FC Mainz",
+    "team_abbreviation": "M05"
+  },
+  {
+    "team_name": "Holstein Kiel",
+    "team_abbreviation": "KSV"
+  },
+  {
+    "team_name": "RB Leipzig",
+    "team_abbreviation": "RBL"
+  },
+  {
+    "team_name": "SC Freiburg",
+    "team_abbreviation": "SCF"
+  },
+  {
+    "team_name": "St. Pauli",
+    "team_abbreviation": "STP"
+  },
+  {
+    "team_name": "TSG Hoffenheim",
+    "team_abbreviation": "TSG"
+  },
+  {
+    "team_name": "VfB Stuttgart",
+    "team_abbreviation": "VFB"
+  },
+  {
+    "team_name": "VfL Bochum",
+    "team_abbreviation": "BOC"
+  },
+  {
+    "team_name": "VfL Wolfsburg",
+    "team_abbreviation": "WOB"
+  },
+  {
+    "team_name": "Werder Bremen",
+    "team_abbreviation": "SVW"
+  },
+  {
+    "team_name": "AEK Athens",
+    "team_abbreviation": "AEK"
+  },
+  {
+    "team_name": "Aris",
+    "team_abbreviation": "ARI"
+  },
+  {
+    "team_name": "Asteras Tripoli",
+    "team_abbreviation": "AST"
+  },
+  {
+    "team_name": "Atromitos",
+    "team_abbreviation": "ATRO"
+  },
+  {
+    "team_name": "Kifisia",
+    "team_abbreviation": "KIF"
+  },
+  {
+    "team_name": "Lamia",
+    "team_abbreviation": "LAM"
+  },
+  {
+    "team_name": "OFI Crete",
+    "team_abbreviation": "OFI"
+  },
+  {
+    "team_name": "Olympiakos",
+    "team_abbreviation": "OLY"
+  },
+  {
+    "team_name": "PAOK Salonika",
+    "team_abbreviation": "PAOK"
+  },
+  {
+    "team_name": "Panathinaikos",
+    "team_abbreviation": "PAO"
+  },
+  {
+    "team_name": "Panetolikos",
+    "team_abbreviation": "PAN"
+  },
+  {
+    "team_name": "Panserraikos FC",
+    "team_abbreviation": "PAN"
+  },
+  {
+    "team_name": "Pas Giannina",
+    "team_abbreviation": "PAS"
+  },
+  {
+    "team_name": "Volos NFC",
+    "team_abbreviation": "VOL"
+  },
+  {
+    "team_name": "Ashdod",
+    "team_abbreviation": "ASH"
+  },
+  {
+    "team_name": "Beitar Jerusalem",
+    "team_abbreviation": "BEI"
+  },
+  {
+    "team_name": "Bnei Sakhnin",
+    "team_abbreviation": "SAK"
+  },
+  {
+    "team_name": "Hapoel Beer Sheva",
+    "team_abbreviation": "HBS"
+  },
+  {
+    "team_name": "Hapoel Hadera",
+    "team_abbreviation": "HHD"
+  },
+  {
+    "team_name": "Hapoel Haifa",
+    "team_abbreviation": "HHA"
+  },
+  {
+    "team_name": "Hapoel Jerusalem",
+    "team_abbreviation": "HJL"
+  },
+  {
+    "team_name": "Hapoel Petah Tikva",
+    "team_abbreviation": "HPT"
+  },
+  {
+    "team_name": "Hapoel Tel Aviv",
+    "team_abbreviation": "HTA"
+  },
+  {
+    "team_name": "Maccabi Bnei Reineh",
+    "team_abbreviation": "MBR"
+  },
+  {
+    "team_name": "Maccabi Haifa",
+    "team_abbreviation": "MHA"
+  },
+  {
+    "team_name": "Maccabi Netanya",
+    "team_abbreviation": "MNE"
+  },
+  {
+    "team_name": "Maccabi Petach Tikva",
+    "team_abbreviation": "MPT"
+  },
+  {
+    "team_name": "Maccabi Tel Aviv",
+    "team_abbreviation": "MTA"
+  },
+  {
+    "team_name": "AC Milan",
+    "team_abbreviation": "MIL"
+  },
+  {
+    "team_name": "Atalanta",
+    "team_abbreviation": "ATA"
+  },
+  {
+    "team_name": "Bologna",
+    "team_abbreviation": "BOL"
+  },
+  {
+    "team_name": "Cagliari",
+    "team_abbreviation": "CAG"
+  },
+  {
+    "team_name": "Como",
+    "team_abbreviation": "COM"
+  },
+  {
+    "team_name": "Empoli",
+    "team_abbreviation": "EMP"
+  },
+  {
+    "team_name": "Fiorentina",
+    "team_abbreviation": "FIO"
+  },
+  {
+    "team_name": "Genoa",
+    "team_abbreviation": "GEN"
+  },
+  {
+    "team_name": "Inter Milan",
+    "team_abbreviation": "INT"
+  },
+  {
+    "team_name": "Juventus",
+    "team_abbreviation": "JUV"
+  },
+  {
+    "team_name": "Lazio",
+    "team_abbreviation": "LAZ"
+  },
+  {
+    "team_name": "Lecce",
+    "team_abbreviation": "LEC"
+  },
+  {
+    "team_name": "Napoli",
+    "team_abbreviation": "NAP"
+  },
+  {
+    "team_name": "AS Roma",
+    "team_abbreviation": "ROMA"
+  },
+  {
+    "team_name": "Torino",
+    "team_abbreviation": "TOR"
+  },
+  {
+    "team_name": "Udinese",
+    "team_abbreviation": "UDI"
+  },
+  {
+    "team_name": "Venezia",
+    "team_abbreviation": "VEN"
+  },
+  {
+    "team_name": "Hellas Verona",
+    "team_abbreviation": "VER"
+  },
+  {
+    "team_name": "Parma",
+    "team_abbreviation": "PAR"
+  },
+  {
+    "team_name": "Monza",
+    "team_abbreviation": "MON"
+  },
+  {
+    "team_name": "Ajax Amsterdam",
+    "team_abbreviation": "AJAX"
+  },
+  {
+    "team_name": "Almere City",
+    "team_abbreviation": "ALM"
+  },
+  {
+    "team_name": "AZ Alkmaar",
+    "team_abbreviation": "AZ"
+  },
+  {
+    "team_name": "Excelsior",
+    "team_abbreviation": "EXC"
+  },
+  {
+    "team_name": "Feyenoord Rotterdam",
+    "team_abbreviation": "FEY"
+  },
+  {
+    "team_name": "Fortuna Sittard",
+    "team_abbreviation": "FOR"
+  },
+  {
+    "team_name": "Go Ahead Eagles",
+    "team_abbreviation": "GAE"
+  },
+  {
+    "team_name": "FC Twente",
+    "team_abbreviation": "TWE"
+  },
+  {
+    "team_name": "FC Utrecht",
+    "team_abbreviation": "UTR"
+  },
+  {
+    "team_name": "FC Volendam",
+    "team_abbreviation": "VOL"
+  },
+  {
+    "team_name": "Heerenveen",
+    "team_abbreviation": "HEE"
+  },
+  {
+    "team_name": "Heracles Almelo",
+    "team_abbreviation": "HER"
+  },
+  {
+    "team_name": "NEC Nijmegen",
+    "team_abbreviation": "NEC"
+  },
+  {
+    "team_name": "PEC Zwolle",
+    "team_abbreviation": "ZWO"
+  },
+  {
+    "team_name": "PSV Eindhoven",
+    "team_abbreviation": "PSV"
+  },
+  {
+    "team_name": "RKC Waalwijk",
+    "team_abbreviation": "RKC"
+  },
+  {
+    "team_name": "Sparta Rotterdam",
+    "team_abbreviation": "SPA"
+  },
+  {
+    "team_name": "Vitesse",
+    "team_abbreviation": "VIT"
+  },
+  {
+    "team_name": "Arouca",
+    "team_abbreviation": "ARO"
+  },
+  {
+    "team_name": "Benfica",
+    "team_abbreviation": "BEN"
+  },
+  {
+    "team_name": "Boavista",
+    "team_abbreviation": "BOA"
+  },
+  {
+    "team_name": "Braga",
+    "team_abbreviation": "BRA"
+  },
+  {
+    "team_name": "Casa Pia",
+    "team_abbreviation": "CAS"
+  },
+  {
+    "team_name": "Estoril",
+    "team_abbreviation": "EST"
+  },
+  {
+    "team_name": "Estrela",
+    "team_abbreviation": "ESTR"
+  },
+  {
+    "team_name": "FC Famalicão",
+    "team_abbreviation": "FAM"
+  },
+  {
+    "team_name": "FC Porto",
+    "team_abbreviation": "FCP"
+  },
+  {
+    "team_name": "GD Chaves",
+    "team_abbreviation": "CHA"
+  },
+  {
+    "team_name": "Gil Vicente",
+    "team_abbreviation": "GIL"
+  },
+  {
+    "team_name": "Guimarães",
+    "team_abbreviation": "GUI"
+  },
+  {
+    "team_name": "Moreirense",
+    "team_abbreviation": "MOR"
+  },
+  {
+    "team_name": "Portimonense",
+    "team_abbreviation": "POR"
+  },
+  {
+    "team_name": "Rio Ave",
+    "team_abbreviation": "RAV"
+  },
+  {
+    "team_name": "SC Farense",
+    "team_abbreviation": "FAR"
+  },
+  {
+    "team_name": "Sporting CP",
+    "team_abbreviation": "SCP"
+  },
+  {
+    "team_name": "Vizela",
+    "team_abbreviation": "VIZ"
+  },
+  {
+    "team_name": "Aberdeen",
+    "team_abbreviation": "ABD"
+  },
+  {
+    "team_name": "Celtic",
+    "team_abbreviation": "CEL"
+  },
+  {
+    "team_name": "Dundee",
+    "team_abbreviation": "DUN"
+  },
+  {
+    "team_name": "Hearts",
+    "team_abbreviation": "HEA"
+  },
+  {
+    "team_name": "Hibernian",
+    "team_abbreviation": "HIB"
+  },
+  {
+    "team_name": "Kilmarnock",
+    "team_abbreviation": "KIL"
+  },
+  {
+    "team_name": "Livingston",
+    "team_abbreviation": "LIV"
+  },
+  {
+    "team_name": "Motherwell",
+    "team_abbreviation": "MOT"
+  },
+  {
+    "team_name": "Rangers",
+    "team_abbreviation": "RAN"
+  },
+  {
+    "team_name": "Ross County",
+    "team_abbreviation": "ROS"
+  },
+  {
+    "team_name": "St. Johnstone",
+    "team_abbreviation": "STJ"
+  },
+  {
+    "team_name": "St. Mirren",
+    "team_abbreviation": "STM"
+  },
+  {
+    "team_name": "Deportivo Alavés",
+    "team_abbreviation": "ALA"
+  },
+  {
+    "team_name": "UD Almería",
+    "team_abbreviation": "ALM"
+  },
+  {
+    "team_name": "Athletic Bilbao",
+    "team_abbreviation": "ATH"
+  },
+  {
+    "team_name": "Atlético Madrid",
+    "team_abbreviation": "ATM"
+  },
+  {
+    "team_name": "FC Barcelona",
+    "team_abbreviation": "BAR"
+  },
+  {
+    "team_name": "Cádiz CF",
+    "team_abbreviation": "CAD"
+  },
+  {
+    "team_name": "Celta Vigo",
+    "team_abbreviation": "CEL"
+  },
+  {
+    "team_name": "Getafe CF",
+    "team_abbreviation": "GET"
+  },
+  {
+    "team_name": "Girona FC",
+    "team_abbreviation": "GIR"
+  },
+  {
+    "team_name": "Granada CF",
+    "team_abbreviation": "GRA"
+  },
+  {
+    "team_name": "UD Las Palmas",
+    "team_abbreviation": "PAL"
+  },
+  {
+    "team_name": "CA Osasuna",
+    "team_abbreviation": "OSA"
+  },
+  {
+    "team_name": "Rayo Vallecano",
+    "team_abbreviation": "RAY"
+  },
+  {
+    "team_name": "Real Betis",
+    "team_abbreviation": "BET"
+  },
+  {
+    "team_name": "Real Madrid",
+    "team_abbreviation": "RMA"
+  },
+  {
+    "team_name": "RCD Mallorca",
+    "team_abbreviation": "MAL"
+  },
+  {
+    "team_name": "Real Sociedad",
+    "team_abbreviation": "RSO"
+  },
+  {
+    "team_name": "Sevilla FC",
+    "team_abbreviation": "SEV"
+  },
+  {
+    "team_name": "Valencia CF",
+    "team_abbreviation": "VAL"
+  },
+  {
+    "team_name": "Villarreal CF",
+    "team_abbreviation": "VIL"
+  },
+  {
+    "team_name": "AIK",
+    "team_abbreviation": "AIK"
+  },
+  {
+    "team_name": "BK Häcken",
+    "team_abbreviation": "BKH"
+  },
+  {
+    "team_name": "Djurgårdens IF",
+    "team_abbreviation": "DIF"
+  },
+  {
+    "team_name": "Elfsborg",
+    "team_abbreviation": "ELS"
+  },
+  {
+    "team_name": "GIF Sundsvall",
+    "team_abbreviation": "SUN"
+  },
+  {
+    "team_name": "Hammarby IF",
+    "team_abbreviation": "HAM"
+  },
+  {
+    "team_name": "Helsingborgs IF",
+    "team_abbreviation": "HEL"
+  },
+  {
+    "team_name": "IFK Göteborg",
+    "team_abbreviation": "IFK"
+  },
+  {
+    "team_name": "IFK Norrköping",
+    "team_abbreviation": "NOR"
+  },
+  {
+    "team_name": "IK Sirius",
+    "team_abbreviation": "SIR"
+  },
+  {
+    "team_name": "Kalmar FF",
+    "team_abbreviation": "KAL"
+  },
+  {
+    "team_name": "Malmö FF",
+    "team_abbreviation": "MAL"
+  },
+  {
+    "team_name": "Mjällby AIF",
+    "team_abbreviation": "MJA"
+  },
+  {
+    "team_name": "Örebro SK",
+    "team_abbreviation": "ÖRE"
+  },
+  {
+    "team_name": "Varbergs BoIS",
+    "team_abbreviation": "VAR"
+  },
+  {
+    "team_name": "Östersunds FK",
+    "team_abbreviation": "ÖFK"
+  },
+  {
+    "team_name": "Adana Demirspor",
+    "team_abbreviation": "ADS"
+  },
+  {
+    "team_name": "Alanyaspor",
+    "team_abbreviation": "ALN"
+  },
+  {
+    "team_name": "Ankaragücü",
+    "team_abbreviation": "ANK"
+  },
+  {
+    "team_name": "Antalyaspor",
+    "team_abbreviation": "ANT"
+  },
+  {
+    "team_name": "Başakşehir",
+    "team_abbreviation": "BAŞ"
+  },
+  {
+    "team_name": "Beşiktaş",
+    "team_abbreviation": "BJK"
+  },
+  {
+    "team_name": "Fenerbahçe",
+    "team_abbreviation": "FB"
+  },
+  {
+    "team_name": "Galatasaray",
+    "team_abbreviation": "GS"
+  },
+  {
+    "team_name": "Gaziantep",
+    "team_abbreviation": "GAZ"
+  },
+  {
+    "team_name": "Hatayspor",
+    "team_abbreviation": "HTY"
+  },
+  {
+    "team_name": "Istanbulspor AŞ",
+    "team_abbreviation": "IST"
+  },
+  {
+    "team_name": "Kayserispor",
+    "team_abbreviation": "KYS"
+  },
+  {
+    "team_name": "Kasımpaşa",
+    "team_abbreviation": "KAS"
+  },
+  {
+    "team_name": "Karagümrük",
+    "team_abbreviation": "KGM"
+  },
+  {
+    "team_name": "Konyaspor",
+    "team_abbreviation": "KON"
+  },
+  {
+    "team_name": "Pendikspor",
+    "team_abbreviation": "PEN"
+  },
+  {
+    "team_name": "Rizespor",
+    "team_abbreviation": "RIZ"
+  },
+  {
+    "team_name": "Samsunspor",
+    "team_abbreviation": "SAM"
+  },
+  {
+    "team_name": "Sivasspor",
+    "team_abbreviation": "SIV"
+  },
+  {
+    "team_name": "Trabzonspor",
+    "team_abbreviation": "TRA"
+  }
+]
