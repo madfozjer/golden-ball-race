@@ -336,10 +336,6 @@
     "team_abbreviation": "MID"
   },
   {
-    "team_name": "Millwall",
-    "team_abbreviation": "MIL"
-  },
-  {
     "team_name": "Norwich City",
     "team_abbreviation": "NOR"
   },
@@ -422,10 +418,6 @@
   {
     "team_name": "Lincoln City",
     "team_abbreviation": "LIN"
-  },
-  {
-    "team_name": "Barnsley",
-    "team_abbreviation": "BAR"
   },
   {
     "team_name": "Birmingham City",
@@ -668,7 +660,7 @@
     "team_abbreviation": "B29"
   },
   {
-    "team_name": "Bayern Munich",
+    "team_name": "Bayern München",
     "team_abbreviation": "FCB"
   },
   {
@@ -1124,11 +1116,11 @@
     "team_abbreviation": "ATH"
   },
   {
-    "team_name": "Atlético Madrid",
+    "team_name": "Atletico Madrid",
     "team_abbreviation": "ATM"
   },
   {
-    "team_name": "FC Barcelona",
+    "team_name": "Barcelona",
     "team_abbreviation": "BAR"
   },
   {

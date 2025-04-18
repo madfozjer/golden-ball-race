@@ -26,18 +26,63 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/api/scorers", (req, res) => {});
+async function getPlayerTeams() {
+  try {
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    page.setDefaultNavigationTimeout(60000);
+    const url =
+      "https://www.fotmob.com/en/leagues/42/stats/season/24110/players/rating";
 
-app.get("/api/standings", (req, res) => {});
+    await page.goto(url, { waitUntil: "networkidle0" });
+    const links = await page.evaluate(() => {
+      // Find the div with the class "LeagueSeasonStatsTableCSS"
+      const targetDiv = document.querySelector(
+        'div[class*="LeagueSeasonStatsTableCSS"]'
+      );
+
+      if (!targetDiv) return []; // Return an empty array if the div is not found
+
+      // Find all <a> tags inside that div
+      const anchorTags = targetDiv.querySelectorAll("a");
+      const hrefs = [];
+
+      anchorTags.forEach((anchor) => {
+        hrefs.push(anchor.href); // Collect the href attribute of each link
+      });
+
+      return hrefs; // Return the array of hrefs
+    });
+
+    const result = {};
+
+    for (let i = 0; i < links.length; i++) {
+      const link = links[i];
+      await page.goto(link, { waitUntil: "domcontentloaded" });
+
+      const content = await page.evaluate(() => {
+        const targetDiv = document.querySelector('div[class*="TeamCSS"]');
+        if (!targetDiv) return "";
+        targetDiv.querySelectorAll("img").forEach((img) => img.remove());
+        return targetDiv.textContent.trim();
+      });
+
+      result[i] = content;
+    }
+
+    await browser.close();
+    return result;
+  } catch (error) {
+    res.send(error);
+  }
+}
 
 app.get("/api/rating", async (req, res) => {
-  res.set("Content-Type", "text/html");
-
   try {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     const url =
-      "https://www.fotmob.com/uk/leagues/42/stats/season/24110/players/rating";
+      "https://www.fotmob.com/en/leagues/42/stats/season/24110/players/rating";
 
     await page.goto(url, { waitUntil: "networkidle0" });
 
@@ -55,8 +100,14 @@ app.get("/api/rating", async (req, res) => {
 
     names.forEach((name, index) => {
       result[name] = Math.floor(
-        parseFloat(ratings[index].replace(/,/g, ".")) * 100
+        parseFloat(ratings[index].replace(/,/g, ".")) * 50
       );
+    });
+
+    const teams = await getPlayerTeams();
+
+    Object.keys(result).forEach((key, index) => {
+      result[key] = { score: result[key], team: teams[index] };
     });
 
     // Close the browser after scraping
@@ -103,10 +154,35 @@ app.get("/api/teamcheck", async (req, res) => {
       return acc;
     }, {});
 
-    res.json(teams);
+    await browser.close();
+    res.json(updated);
   } catch (error) {
     res.send(error);
   }
+});
+
+app.get("/api/matchteams", (req, res) => {
+  const teams = JSON.parse(req.query.teams);
+  const players = JSON.parse(req.query.players);
+
+  Object.keys(players).forEach((playerKey) => {
+    const teamExists = Object.keys(teams).includes(players[playerKey].team);
+
+    if (teamExists) {
+      players[playerKey].score += Math.floor(
+        31.25 * Math.pow(2, teams[players[playerKey].team])
+      );
+    }
+  });
+
+  const sortedPlayers = Object.entries(players)
+    .sort(([, a], [, b]) => b.score - a.score)
+    .reduce((acc, [key, value]) => {
+      acc[key] = value;
+      return acc;
+    }, {});
+
+  res.json(sortedPlayers);
 });
 
 app.get("/api/health", (req, res) => {
