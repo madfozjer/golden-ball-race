@@ -3,36 +3,6 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import App from "./App.vue";
 
-async function getTopScorers() {
-  try {
-    const response = await fetch(`http://localhost:5000/api/scorers`);
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log(result);
-  } catch (error) {
-    console.error(`Fetch scorers is unsuccesful.`, error);
-  }
-}
-
-async function getStandings() {
-  try {
-    const response = await fetch(`http://localhost:5000/api/standings`);
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log(result);
-  } catch (error) {
-    console.error(`Fetch standings is unsuccesful.`, error);
-  }
-}
-
 async function checkAPI() {
   try {
     const response = await fetch(`http://localhost:5000/api/health`);
@@ -43,71 +13,30 @@ async function checkAPI() {
     const result = await response.json();
     console.log(result);
   } catch (error) {
-    console.error(`Fetch standings is unsuccesful.`, error);
+    console.error(`Fetch health is unsuccesful.`, error);
   }
 }
 
-async function getRatings() {
+async function getData() {
   try {
-    const response = await fetch(`http://localhost:5000/api/rating`);
+    const response = await fetch(`http://localhost:5000/api/getdata`);
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
     const result = await response.json();
-    console.log(result);
     return result;
   } catch (error) {
-    console.error(`Fetch ratings is unsuccesful.`, error);
+    console.error(`Fetch data is unsuccesful.`, error);
   }
 }
 
-async function getTeams() {
-  try {
-    const response = await fetch(`http://localhost:5000/api/teamcheck`);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log(result);
-    return result;
-  } catch (error) {
-    console.error(`Fetch teams is unsuccesful.`, error);
-  }
-}
-
-async function matchTeams(t, p) {
-  const request = new URLSearchParams({
-    teams: JSON.stringify(t),
-    players: JSON.stringify(p),
-  }).toString();
-  try {
-    const response = await fetch(
-      `http://localhost:5000/api/matchteams?${request}`
-    );
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log(result);
-  } catch (error) {
-    console.error(`Match teams is unsuccesful.`, error);
-  }
-}
-
-async function runTeamMatching() {
-  try {
-    const players = await getRatings();
-    const teams = await getTeams();
-    matchTeams(teams, players);
-  } catch (error) {
-    console.error("Error during team matching:", error);
-  }
-}
+const app = createApp(App);
 
 checkAPI();
-runTeamMatching();
+const data = await getData();
+app.config.globalProperties.$data = {
+  data: data,
+};
 
-createApp(App).mount("#app");
+app.mount("#app");

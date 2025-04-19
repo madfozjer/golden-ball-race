@@ -71,13 +71,15 @@ async function getPlayerTeams() {
     }
 
     await browser.close();
+    console.log("Player teams were fetched succesfully");
     return result;
   } catch (error) {
-    res.send(error);
+    console.error(error);
   }
 }
 
-app.get("/api/rating", async (req, res) => {
+async function getRatings() {
+  //10 pages
   try {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
@@ -98,10 +100,22 @@ app.get("/api/rating", async (req, res) => {
       return spans.map((span) => span.querySelector("span").innerHTML.trim());
     });
 
+    //getDomesticRatings() 4 pages
+
+    const potm = await page.$$eval(
+      'span[class*="css-lylvvy-SubStat"',
+      (spans) => {
+        return spans.map((span) =>
+          parseInt(span.querySelector("span").innerHTML.trim())
+        );
+      }
+    );
+
     names.forEach((name, index) => {
       result[name] = Math.floor(
         parseFloat(ratings[index].replace(/,/g, ".")) * 50
       );
+      result[name] += Math.floor(potm[index] * 7.5);
     });
 
     const teams = await getPlayerTeams();
@@ -112,16 +126,57 @@ app.get("/api/rating", async (req, res) => {
 
     // Close the browser after scraping
     await browser.close();
+    const updatedResult = await getGA(result);
 
-    res.json(result);
+    console.log("Player ratings were fetched succesfully");
+    return updatedResult;
   } catch (error) {
-    res.send(error);
+    console.error(error);
   }
-});
+}
 
-app.get("/api/teamcheck", async (req, res) => {
-  res.set("Content-Type", "text/html");
+async function getGA(top10) {
+  //3 pages
+  //rewrite with full data
+  try {
+    const browser = await puppeteer.launch({ headless: true });
+    const page = await browser.newPage();
+    const url =
+      "https://www.fotmob.com/uk/leagues/42/stats/season/24110/players/_goals_and_goal_assist/champions-league";
 
+    await page.goto(url, { waitUntil: "networkidle0" });
+
+    const result = {};
+    const names = await page.$$eval(
+      'span[class*="TeamOrPlayerName"]',
+      (spans) => {
+        return spans.map((span) => span.innerHTML.trim());
+      }
+    );
+
+    const ratings = await page.$$eval('span[class*="StatValue"]', (spans) => {
+      return spans.map((span) => span.querySelector("span").innerHTML.trim());
+    });
+
+    //getDomesticGA 2 pages
+
+    names.forEach((name, index) => {
+      if (Object.keys(top10).includes(name)) {
+        top10[name].score += ratings[index] * 25;
+      }
+    });
+
+    // Close the browser after scraping
+    await browser.close();
+
+    console.log("G+A statistics were fetched succesfully");
+    return top10;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function getTeams() {
   try {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
@@ -144,6 +199,7 @@ app.get("/api/teamcheck", async (req, res) => {
 
     const data = await getJSON("teams.json");
     delete result.TBD;
+    //getDomesticTeams()
 
     const updated = Object.keys(result).reduce((acc, abbr) => {
       // Find the corresponding team name from the abbreviation
@@ -155,35 +211,41 @@ app.get("/api/teamcheck", async (req, res) => {
     }, {});
 
     await browser.close();
-    res.json(updated);
+    console.log("Teams were fetched succesfully");
+    return updated;
   } catch (error) {
-    res.send(error);
+    console.error(error);
   }
-});
+}
 
-app.get("/api/matchteams", (req, res) => {
-  const teams = JSON.parse(req.query.teams);
-  const players = JSON.parse(req.query.players);
+async function matchTeams(t, p) {
+  try {
+    const teams = t;
+    const players = p;
 
-  Object.keys(players).forEach((playerKey) => {
-    const teamExists = Object.keys(teams).includes(players[playerKey].team);
+    Object.keys(players).forEach((playerKey) => {
+      const teamExists = Object.keys(teams).includes(players[playerKey].team);
 
-    if (teamExists) {
-      players[playerKey].score += Math.floor(
-        31.25 * Math.pow(2, teams[players[playerKey].team])
-      );
-    }
-  });
+      if (teamExists) {
+        players[playerKey].score += Math.floor(
+          31.25 * Math.pow(2, teams[players[playerKey].team])
+        );
+      }
+    });
 
-  const sortedPlayers = Object.entries(players)
-    .sort(([, a], [, b]) => b.score - a.score)
-    .reduce((acc, [key, value]) => {
-      acc[key] = value;
-      return acc;
-    }, {});
+    const sortedPlayers = Object.entries(players)
+      .sort(([, a], [, b]) => b.score - a.score)
+      .reduce((acc, [key, value]) => {
+        acc[key] = value;
+        return acc;
+      }, {});
 
-  res.json(sortedPlayers);
-});
+    console.log("Players and teams were matched succesfully");
+    return sortedPlayers;
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 app.get("/api/health", (req, res) => {
   res.json({ message: "API is running" });
@@ -198,3 +260,40 @@ async function getJSON(file) {
   const filepath = path.join(__dirname, file);
   return await readJsonFile(filepath);
 }
+
+app.get("/api/getdata", async (req, res) => {
+  try {
+    const data = await fs.readFile("data.json", "utf8");
+    const jsonData = JSON.parse(data);
+    res.json(jsonData);
+  } catch (err) {
+    console.error("Error reading or parsing data.json:", err);
+    res.status(500).send("Error reading or parsing data");
+  }
+});
+
+async function fetchData() {
+  //make this multipage fetch + add domestic leagues
+  try {
+    const players = await getRatings();
+    const teams = await getTeams();
+    const result = await matchTeams(teams, players);
+    fs.writeFile(
+      "data.json",
+      JSON.stringify(result, null, 2),
+      "utf8",
+      (err) => {
+        if (err) {
+          console.error("Error writing file:", err);
+        } else {
+          console.log("File written successfully.");
+        }
+      }
+    );
+    console.log("Data was fetched succesfully");
+  } catch (error) {
+    console.error("Error during data fetching:", error);
+  }
+}
+
+fetchData();
